@@ -17,3 +17,11 @@ namespace :assets do
     AssetsCLI.new.compile
   end
 end
+
+namespace :docs do
+  desc 'Compile all assets'
+  task :download_all do
+    load 'tasks/docs.thor'
+    DocsCLI.new.download(:all)
+  end
+end
