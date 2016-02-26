@@ -15,12 +15,7 @@ namespace :assets do
   task :precompile do
     load 'tasks/assets.thor'
     AssetsCLI.new.compile
-  end
-end
 
-namespace :docs do
-  desc 'Compile all assets'
-  task :download_all do
     load 'tasks/docs.thor'
     DocsCLI.new.download(:all)
   end
