@@ -17,6 +17,6 @@ namespace :assets do
     AssetsCLI.new.compile
 
     load 'tasks/docs.thor'
-    DocsCLI.new.download(:all)
+    DocsCLI.new([], all: true).download
   end
 end
